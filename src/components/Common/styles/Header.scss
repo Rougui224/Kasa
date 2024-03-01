@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  height: 108px;
+  &_logo {
+    width: 210px;
+    height: 68px;
+    object-fit: cover;
+  }
+  &_nav_ul {
+    width: 165px;
+    height: 34px;
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+    margin-top: 29px;
+    justify-content: space-between;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+  }
+  .active {
+    text-decoration: underline;
+  }
+}

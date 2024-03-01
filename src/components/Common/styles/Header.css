@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  height: 108px;
+}
+.header_logo {
+  width: 210px;
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header_nav_ul {
+  width: 165px;
+  height: 34px;
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+  margin-top: 29px;
+  justify-content: space-between;
+}
+.header li {
+  list-style-type: none;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+.header .active {
+  text-decoration: underline;
+}/*# sourceMappingURL=Header.css.map */

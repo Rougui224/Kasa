@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.innerAbout {
+  width: 100%;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 317px);
+}
+.innerAbout section {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+  flex: 2;
+}/*# sourceMappingURL=About.css.map */

@@ -1,0 +1,33 @@
+.collaps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  &_header {
+    width: 100%;
+    height: 54px;
+
+    padding: 10px 20px 10px 15px;
+    border-radius: 5px;
+
+    background-color: #ff6060;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_icon {
+      transition: transform 0.8s ease-in-out;
+    }
+    .open {
+      transform: rotate(180deg);
+      transition: transform;
+    }
+  }
+  &_description {
+    width: 100%;
+    padding: 10px;
+    background-color: #f6f6f673;
+  }
+}
