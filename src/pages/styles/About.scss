@@ -1,13 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
+// @import "root";
+
 html,
 body {
   height: 100%;
 }
+// @import "header";
+// @import "collaps";
+// @import "picture";
 .innerAbout {
   width: 100%;
   padding: 0px 50px;
@@ -25,3 +24,5 @@ body {
     flex: 2;
   }
 }
+
+// @import "footer";

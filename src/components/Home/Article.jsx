@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import "./styles/Article.css";
 export function Article({ imageUrl, title, id }) {
   return (
     <Link key={id} to={`/logement/${id}`}>

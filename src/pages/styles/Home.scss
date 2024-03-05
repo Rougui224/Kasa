@@ -1,9 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+.articleCard {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  &_img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
+
+.allCards {
+  position: relative;
+  z-index: 0;
+  background-color: #f6f6f6;
+  width: 100%;
+  margin: 40px 0;
+  padding: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  a {
+    position: relative;
+    z-index: 5;
+    color: white;
+    text-decoration: none;
+  }
+}
+
 .innerHome {
   padding: 0px 50px;
   &_picture {

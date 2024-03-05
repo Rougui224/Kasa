@@ -1,11 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import "./styles/Collaps.css";
+// import "./styles/Collaps.css";
 import { useState } from "react";
 export function Collaps({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
   function toggleOpen() {
-    console.log("clic");
     setIsOpen((prevState) => !prevState);
   }
   return (

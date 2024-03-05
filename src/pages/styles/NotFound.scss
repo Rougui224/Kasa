@@ -1,0 +1,22 @@
+.innerNotFound {
+  padding: 0px 50px;
+  min-height: calc(100vh - 317px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  &_picture {
+    width: 597px;
+    height: 263px;
+    object-fit: cover;
+  }
+  &_paragraph {
+    color: #ff6060;
+    font-size: 36px;
+  }
+  &_link {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

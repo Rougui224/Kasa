@@ -1,0 +1,131 @@
+.innerAccommodation {
+  padding: 0px 50px 25px 50px;
+  min-height: calc(100vh - 317px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.innerAccommodation_description {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.innerAccommodation_collaps {
+  margin-top: 20px;
+  display: flex;
+  gap: 76px;
+}
+.innerAccommodation .collaps_description {
+  height: 172px;
+  padding: 15px;
+}
+
+.carrousel {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.carrousel_appartmentPicture {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carrousel_index {
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.infoAccommodation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.infoAccommodation_title {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+.infoAccommodation_location {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 2px;
+}
+.infoAccommodation_tags {
+  display: flex;
+  gap: 7px;
+}
+.infoAccommodation_tags li {
+  height: 25px;
+  list-style-type: none;
+  background-color: #ff6060;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 15px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserSection {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+.UserSection_information {
+  width: 167px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.UserSection_information_title {
+  width: 93px;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+}
+.UserSection_information_cover {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.UserSection_stars {
+  width: 196px;
+  height: 36px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+.UserSection .star {
+  width: 32px;
+  height: 36px;
+}
+.UserSection img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Accomodation.css.map */

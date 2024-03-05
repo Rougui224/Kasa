@@ -1,4 +1,3 @@
-import "./styles/Card.css";
 import { Article } from "./Article";
 import { accommodationList } from "../../data/accommodationList";
 

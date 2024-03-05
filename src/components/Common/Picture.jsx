@@ -1,4 +1,3 @@
-import "./styles/Picture.css";
 export function Picture({ imgeUrl, altText, children }) {
   return (
     <div className="picture">

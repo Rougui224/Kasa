@@ -29,5 +29,13 @@
     width: 100%;
     padding: 10px;
     background-color: #f6f6f673;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    li {
+      list-style-type: none;
+    }
   }
 }

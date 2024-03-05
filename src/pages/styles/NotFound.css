@@ -1,0 +1,23 @@
+.innerNotFound {
+  padding: 0px 50px;
+  min-height: calc(100vh - 317px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.innerNotFound_picture {
+  width: 597px;
+  height: 263px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.innerNotFound_paragraph {
+  color: #ff6060;
+  font-size: 36px;
+}
+.innerNotFound_link {
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}/*# sourceMappingURL=NotFound.css.map */
