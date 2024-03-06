@@ -128,4 +128,81 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media all and (max-width: 757px) {
+  .innerAccommodation {
+    padding: 0 20px 25px 20px;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .innerAccommodation_description {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 10px;
+  }
+  .innerAccommodation_collaps {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .carrousel {
+    min-height: 255px;
+    flex: 1;
+    border-radius: 10px;
+    padding: 0;
+  }
+  .carrousel_index {
+    display: none;
+  }
+  .carrousel .arrow {
+    width: 24px;
+    height: 24px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .infoAccommodation {
+    gap: 10px;
+  }
+  .infoAccommodation_title {
+    font-size: 18px;
+  }
+  .infoAccommodation_location {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .infoAccommodation_tags {
+    flex-wrap: wrap;
+  }
+  .infoAccommodation_tags li {
+    height: 22px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+  .UserSection {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .UserSection_information {
+    height: 33px;
+    width: auto;
+  }
+  .UserSection_information_title {
+    font-size: 12px;
+  }
+  .UserSection_information_cover {
+    width: 32px;
+    height: 32px;
+  }
+  .UserSection_stars {
+    height: 18px;
+    width: auto;
+    align-items: center;
+  }
+  .UserSection_stars .star {
+    width: 18px;
+    height: 18px;
+  }
 }/*# sourceMappingURL=Accomodation.css.map */

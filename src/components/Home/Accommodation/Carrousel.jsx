@@ -21,13 +21,13 @@ export function Carrousel({ pictures }) {
         alt="Aperçu de l\'appartement"
       />
       <img
-        className="carrousel_arrowLeft"
+        className="arrow carrousel_arrowLeft "
         src={arrowLeft}
         alt="Flêche de gauche"
         onClick={() => prevImage()}
       />
       <img
-        className="carrousel_arrowRight"
+        className="arrow carrousel_arrowRight"
         src={arrowRight}
         alt="Flêche de droite"
         onClick={() => nextImage()}

@@ -20,3 +20,19 @@
     font-size: 18px;
   }
 }
+@media all and (max-width: 757px) {
+  .innerNotFound {
+    padding: 0 50px;
+    &_picture {
+      width: 222px;
+      height: 99px;
+    }
+    &_paragraph {
+      font-size: 18px;
+      text-align: center;
+    }
+    &_link {
+      font-size: 14px;
+    }
+  }
+}

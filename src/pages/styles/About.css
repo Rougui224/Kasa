@@ -18,4 +18,22 @@ body {
   flex-direction: column;
   gap: 20px;
   flex: 2;
+}
+
+@media all and (max-width: 757px) {
+  .innerAbout {
+    padding: 0 20px 20px 20px;
+    gap: 20px;
+  }
+  .innerAbout section {
+    width: 100%;
+    justify-content: space-between;
+    gap: 17px;
+    margin: 0;
+    flex: 1;
+  }
+  .innerAbout .picture {
+    flex: 1;
+    min-height: 111px;
+  }
 }/*# sourceMappingURL=About.css.map */

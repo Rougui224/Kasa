@@ -4,9 +4,7 @@ html,
 body {
   height: 100%;
 }
-// @import "header";
-// @import "collaps";
-// @import "picture";
+
 .innerAbout {
   width: 100%;
   padding: 0px 50px;
@@ -25,4 +23,20 @@ body {
   }
 }
 
-// @import "footer";
+@media all and (max-width: 757px) {
+  .innerAbout {
+    padding: 0 20px 20px 20px;
+    gap: 20px;
+    section {
+      width: 100%;
+      justify-content: space-between;
+      gap: 17px;
+      margin: 0;
+      flex: 1;
+    }
+    .picture {
+      flex: 1;
+      min-height: 111px;
+    }
+  }
+}

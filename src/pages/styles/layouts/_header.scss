@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 50px;
   height: 108px;
   &_logo {
@@ -9,12 +10,9 @@
     object-fit: cover;
   }
   &_nav_ul {
-    width: 165px;
-    height: 34px;
     display: flex;
     gap: 30px;
     padding-left: 0;
-    margin-top: 29px;
     justify-content: space-between;
   }
   li {
@@ -22,10 +20,24 @@
   }
   a {
     text-decoration: none;
+    text-transform: uppercase;
     color: inherit;
     font-weight: 500;
+    font-size: 24px;
   }
   .active {
     text-decoration: underline;
+  }
+}
+@media all and (max-width: 757px) {
+  .header {
+    padding: 20px;
+    &_logo {
+      width: 145px;
+      height: 46.88px;
+    }
+    a {
+      font-size: 12px;
+    }
   }
 }

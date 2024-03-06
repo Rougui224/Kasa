@@ -25,6 +25,10 @@
       transition: transform;
     }
   }
+  &_title {
+    font-weight: 700;
+    font-size: 18px;
+  }
   &_description {
     width: 100%;
     padding: 10px;
@@ -36,6 +40,20 @@
     }
     li {
       list-style-type: none;
+    }
+  }
+}
+@media all and (max-width: 757px) {
+  .collaps {
+    flex: 1;
+    &_header {
+      min-height: 30px;
+      max-height: 50px;
+      flex: 1;
+      border-radius: 5px;
+      &_title {
+        font-size: 13px;
+      }
     }
   }
 }

@@ -20,4 +20,21 @@
   color: black;
   font-weight: 500;
   font-size: 18px;
+}
+
+@media all and (max-width: 757px) {
+  .innerNotFound {
+    padding: 0 50px;
+  }
+  .innerNotFound_picture {
+    width: 222px;
+    height: 99px;
+  }
+  .innerNotFound_paragraph {
+    font-size: 18px;
+    text-align: center;
+  }
+  .innerNotFound_link {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=NotFound.css.map */
