@@ -4,7 +4,7 @@ Ceci est une description de mon projet.
 
 ## Description
 
-Mon projet consiste à [Développer une application complete avec React]([lien_](https://rougui224.github.io/Kasa/)vers_votre_projet), KASA est une entreprise de location d’appartements entre particuliers.
+Mon projet consiste à [Développer une application complète avec React](https://rougui224.github.io/Kasa/). KASA est une entreprise de location d’appartements entre particuliers.
 
 ## Contraintes
 ### React :
