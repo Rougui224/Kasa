@@ -11,11 +11,11 @@
     object-fit: cover;
   }
   &_paragraph {
-    color: #ff6060;
+    color: $primary-color;
     font-size: 36px;
   }
   &_link {
-    color: black;
+    color: $tertiary-color;
     font-weight: 500;
     font-size: 18px;
   }
