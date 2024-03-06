@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logoHeader from "../../assets/pictures/logoHeader.png";
 export function Header() {
   return (
@@ -7,10 +7,10 @@ export function Header() {
       <nav className="header_nav">
         <ul className="header_nav_ul">
           <li>
-            <NavLink to="/">Accueil</NavLink>
+            <NavLink to="/Kasa/">Accueil</NavLink>
           </li>
           <li>
-            <NavLink to="/apropos">A Propos</NavLink>
+            <NavLink to="/Kasa/apropos">A Propos</NavLink>
           </li>
         </ul>
       </nav>
