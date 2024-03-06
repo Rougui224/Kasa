@@ -10,7 +10,7 @@ export function Header() {
             <NavLink to="/Kasa/">Accueil</NavLink>
           </li>
           <li>
-            <NavLink to="/Kasa/apropos">A Propos</NavLink>
+            <NavLink to="/apropos">A Propos</NavLink>
           </li>
         </ul>
       </nav>
