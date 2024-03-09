@@ -19,23 +19,6 @@ export const DataProvider = ({ children }) => {
     })
       .then((response) => response.json())
       .then((data) => setData(data));
-
-    // const fetchData = async () => {
-    //   try {
-    //     const response = await fetch("/data.json"); // Attendre la résolution de la promesse
-    //     const jsonData = await response.json(); // Attendre la conversion de la réponse en JSON
-    //     // Mise à jour de l'état local avec les données récupérées
-    //     setData(jsonData);
-    //   } catch (error) {
-    //     // Gestion des erreurs en cas d'échec de récupération des données
-    //     console.error(
-    //       "Une erreur est survenue lors du chargement des données :",
-    //       error
-    //     );
-    //   }
-    // };
-    // Appel de la fonction fetchData pour récupérer les données au chargement du composant
-    // fetchData();
   }, []); // Le tableau vide [] en tant que deuxième argument signifie que ce hook useEffect ne s'exécute qu'une seule fois, au chargement initial du composant
 
   // Rendu du contexte fournissant les données aux composants enfants
