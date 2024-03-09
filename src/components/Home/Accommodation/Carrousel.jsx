@@ -19,22 +19,26 @@ export function Carrousel({ pictures }) {
         className="carrousel_appartmentPicture"
         src={urlImage}
         alt="Aperçu de l\'appartement"
-      />
-      <img
-        className="arrow carrousel_arrowLeft "
-        src={arrowLeft}
-        alt="Flêche de gauche"
-        onClick={() => prevImage()}
-      />
-      <img
-        className="arrow carrousel_arrowRight"
-        src={arrowRight}
-        alt="Flêche de droite"
-        onClick={() => nextImage()}
-      />
-      <p className="carrousel_index">{`${currentIndex + 1}/${
-        pictures.length
-      }`}</p>
+      />{" "}
+      {pictures.length > 1 && (
+        <>
+          <img
+            className="arrow carrousel_arrowLeft "
+            src={arrowLeft}
+            alt="Flêche de gauche"
+            onClick={() => prevImage()}
+          />
+          <img
+            className="arrow carrousel_arrowRight"
+            src={arrowRight}
+            alt="Flêche de droite"
+            onClick={() => nextImage()}
+          />
+          <p className="carrousel_index">{`${currentIndex + 1}/${
+            pictures.length
+          }`}</p>
+        </>
+      )}
     </div>
   );
 }

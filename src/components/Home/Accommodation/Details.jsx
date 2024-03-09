@@ -1,4 +1,4 @@
-import { Collaps } from "../../Common/Collaps";
+import { Collaps } from "../../Layout/Collaps";
 
 export function Details({ description, equipments }) {
   return (
@@ -11,7 +11,7 @@ export function Details({ description, equipments }) {
         <ul>
           {" "}
           {equipments.map((element, index) => (
-            <li key={`${element}_${index}`}>{element}</li>
+            <li key={`${element}-${index}`}>{element}</li>
           ))}
         </ul>
       </Collaps>

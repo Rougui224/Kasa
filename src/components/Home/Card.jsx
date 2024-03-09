@@ -1,11 +1,9 @@
 import { Article } from "./Article";
-import { accommodationList } from "../../data/accommodationList";
-
-export function Card() {
+export function Card({ data }) {
   return (
     <section className="allCards">
-      {accommodationList.map(({ id, title, cover }) => (
-        <Article imageUrl={cover} title={title} id={id} />
+      {data.map(({ id, title, cover }) => (
+        <Article key={id} imageUrl={cover} title={title} id={id} />
       ))}
     </section>
   );

@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Header } from "./components/Common/Header";
-import { Footer } from "./components/Common/Footer";
+import { DataProvider } from "./data/DataContext";
+import { Header } from "./components/Layout/Header";
+import { Footer } from "./components/Layout/Footer";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Accomodation } from "./pages/Accommodations";
@@ -14,12 +15,15 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/Kasa/" element={<Home />} />
-        <Route path="/apropos" element={<About />} />
-        <Route path="/logement/:id" element={<Accomodation />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <DataProvider>
+        <Routes>
+          <Route path="/Kasa/" element={<Home />} />
+          <Route path="/apropos" element={<About />} />
+          <Route path="/logement/:id" element={<Accomodation />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </DataProvider>
+
       <Footer />
     </Router>
   </React.StrictMode>

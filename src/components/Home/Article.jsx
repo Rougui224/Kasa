@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export function Article({ imageUrl, title, id }) {
   return (
-    <Link key={id} to={`/logement/${id}`}>
-      <article key={id} className="articleCard">
+    <Link to={`/logement/${id}`}>
+      <article className="articleCard">
         <img
           className="articleCard_img"
           src={imageUrl}

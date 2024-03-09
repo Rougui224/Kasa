@@ -12,7 +12,7 @@ export function Collaps({ title, children }) {
       <header className="collaps_header">
         <h3 className="collaps_header_title">{title}</h3>
         <FontAwesomeIcon
-          className={`Collaps_header_icon ${isOpen && "open"}`}
+          className={`collaps_header_icon ${isOpen && "open"}`}
           icon={faChevronUp}
           onClick={() => toggleOpen()}
         />
