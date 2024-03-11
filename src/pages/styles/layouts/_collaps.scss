@@ -6,19 +6,6 @@ $rotate-angle: 180deg;
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(-180deg);
-  }
-}
-
-@keyframes expandDescription {
-  from {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
-  to {
-    opacity: 1;
-    max-height: 1000px;
   }
 }
 
@@ -43,7 +30,7 @@ $rotate-angle: 180deg;
     align-items: center;
 
     .open {
-      animation: rotateIcon $transition-duration ease-in-out both;
+      transform: rotate(-180deg);
     }
   }
   &_title {
@@ -52,9 +39,6 @@ $rotate-angle: 180deg;
   }
   &_description {
     overflow: hidden;
-    max-height: 0;
-    animation: expandDescription $transition-duration ease-in-out both;
-    animation-delay: -200ms;
     width: 100%;
     padding: 10px;
     background-color: #f6f6f673;
@@ -63,15 +47,9 @@ $rotate-angle: 180deg;
       display: flex;
       flex-direction: column;
       gap: 3px;
-      animation: expandDescription $transition-duration ease-in-out both;
-      animation-delay: -200ms;
     }
     li {
       list-style-type: none;
-    }
-    p {
-      animation: expandDescription $transition-duration ease-in-out both;
-      animation-delay: -200ms;
     }
   }
 }

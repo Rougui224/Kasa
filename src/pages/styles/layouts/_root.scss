@@ -1,13 +1,13 @@
-// $primary-color: #ff6060;
-// $secondary-color: #ffffff;
-// $tertiary-color: #000000;
-// $supplementary-color: #f6f6f6;
 @import "variable";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+html,
+body {
+  height: 100%;
 }
 html,
 body {
