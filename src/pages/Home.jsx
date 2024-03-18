@@ -10,7 +10,11 @@ export function Home() {
     <div className="innerHome">
       <section className="innerHome_picture">
         <Banner imgeUrl={homePic} altText={`Image d'accueil`}>
-          <h1> Chez vous, partout et ailleurs</h1>
+          <h1>
+            {" "}
+            Chez vous,
+            <br /> partout et ailleurs
+          </h1>
         </Banner>
       </section>
       <Card data={data} />

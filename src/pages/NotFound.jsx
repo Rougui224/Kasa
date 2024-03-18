@@ -8,7 +8,7 @@ export function NotFound() {
       <p className="innerNotFound_paragraph">
         Oups! La page que vous demandez n'existe pas
       </p>
-      <Link to={"/"} className="innerNotFound_link">
+      <Link to={"/Kasa/"} className="innerNotFound_link">
         Retourner sur la page d'accueil
       </Link>
     </section>

@@ -12,6 +12,7 @@ import "./pages/styles/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  // root.render Cela indique à React de rendre le contenu JSX dans l'élément DOM spécifié par root.
   <React.StrictMode>
     <Router>
       <Header />
