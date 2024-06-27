@@ -11,14 +11,22 @@ export const DataProvider = ({ children }) => {
   // Utilisation du hook useEffect pour effectuer une action au chargement du composant
   useEffect(() => {
     // Définition de la fonction pour récupérer les données
-    fetch("/data.json", {
-      headers: {
-        "content-type": "application/json",
-        accept: "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => setData(data));
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`${process.env.PUBLIC_URL}/data.json`, {
+          headers: {
+            "content-type": "application/json",
+            accept: "application/json",
+          },
+        });
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        console.error("Erreur lors de la récupération des données:", error);
+      }
+    };
+
+    fetchData();
   }, []); // Le tableau vide [] en tant que deuxième argument signifie que ce hook useEffect ne s'exécute qu'une seule fois, au chargement initial du composant
 
   // Rendu du contexte fournissant les données aux composants enfants
